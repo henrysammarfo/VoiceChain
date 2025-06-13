@@ -1,2 +1,1 @@
-# ChainGPT
- Decentralized AI inference marketplace with privacy-first architecture
+VoiceChain is the first decentralized voice commerce network where anyone can transact, shop, and access DeFi services using natural voice commands in ANY language, with instant crypto payments across all blockchains.
