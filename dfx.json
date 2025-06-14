@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "voicechain_backend": {
+      "main": "src/voicechain_backend/main.mo",
+      "type": "motoko"
+    },
+    "voicechain_frontend": {
+      "dependencies": [
+        "voicechain_backend"
+      ],
+      "source": [
+        "src/voicechain_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "voicechain_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
