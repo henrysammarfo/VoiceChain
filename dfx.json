@@ -1,18 +1,23 @@
 {
+  "version": 1,
   "canisters": {
     "voicechain_backend": {
-      "main": "src/voicechain_backend/main.mo",
-      "type": "motoko"
+      "type": "motoko",
+      "main": "src/voicechain_backend/main.mo"
     },
     "voicechain_frontend": {
-      "dependencies": [
-        "voicechain_backend"
-      ],
-      "source": [
-        "src/voicechain_frontend/dist"
-      ],
       "type": "assets",
-      "workspace": "voicechain_frontend"
+      "source": ["dist/"]
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:4943",
+      "type": "ephemeral"
+    },
+    "ic": {
+      "providers": ["https://icp0.io"],
+      "type": "persistent"
     }
   },
   "defaults": {
@@ -21,6 +26,5 @@
       "packtool": ""
     }
   },
-  "output_env_file": ".env",
-  "version": 1
+  "output_env_file": ".env"
 }
